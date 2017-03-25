@@ -22,3 +22,4 @@ c:\Users\Евгений\documents\visual studio 2015\Projects\Task3\Client\bin\D
 c:\Users\Евгений\documents\visual studio 2015\Projects\Task3\Client\bin\Debug\EntityFramework.xml
 c:\Users\Евгений\documents\visual studio 2015\Projects\Task3\Client\bin\Debug\EntityFramework.SqlServer.xml
 c:\Users\Евгений\documents\visual studio 2015\Projects\Task3\Client\bin\Debug\System.Data.SQLite.xml
+C:\Users\Евгений\Documents\Visual Studio 2015\Projects\Task3\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache

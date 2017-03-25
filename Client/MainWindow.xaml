@@ -20,7 +20,7 @@
                 <KeyBinding Command="{Binding GetResult}" Key="Return"></KeyBinding>
             </TextBox.InputBindings>
         </TextBox>
-        <ListView Grid.Row="1" ItemsSource="{Binding Settings ,Mode=TwoWay}">
+        <ListView Grid.Row="1" ItemsSource="{Binding Settings}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Ключ"  DisplayMemberBinding="{Binding Key}"/>

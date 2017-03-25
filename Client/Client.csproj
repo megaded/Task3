@@ -82,9 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Data\ResponceRepository.cs" />
+    <Compile Include="Model\ResponceRepository.cs" />
     <Compile Include="Model\Command.cs" />
     <Compile Include="Model\Setting.cs" />
+    <Compile Include="Model\SettingService.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
