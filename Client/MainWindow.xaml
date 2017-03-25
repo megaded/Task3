@@ -1,0 +1,33 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" VerticalAlignment="Stretch"  Text="{Binding RequestParams}" >
+            <TextBox.InputBindings>
+                <KeyBinding Command="{Binding GetResult}" Key="Return"></KeyBinding>
+            </TextBox.InputBindings>
+        </TextBox>
+        <ListView Grid.Row="1" ItemsSource="{Binding Settings ,Mode=TwoWay}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Ключ"  DisplayMemberBinding="{Binding Key}"/>
+                    <GridViewColumn Header="Значение"  DisplayMemberBinding="{Binding Value}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Grid.Row="2" Command="{Binding GetResult}" Content="Отправить запрос"></Button>
+    </Grid>
+</Window>
